@@ -1,0 +1,129 @@
+//iniciando
+yarn create vite
+
+//para instalar as dependencias
+yarn 
+
+//para rodar o projeto
+yarn dev
+
+//deletar 
+index.css
+app.css
+
+//alterar estrutura de app.jsx deixando so uma div
+
+//main.tsx deleta o import '.index.css'
+
+//==================================================
+
+//aula 02 instalando biome
+
+deletar as extensões do prettier para nao interferir evitando conflitos
+
+//instalando biome com yarn
+yarn add --dev --exact @biomejs/biome
+
+//inicializar a configuração do biome ele cria um arquivo de configuração biome.json
+yarn biome init
+
+//==============================================================================
+
+//aula 03 criando as bases (ajeitando a estrutura da aplicação)
+//criar pastas dentro de src
+pages       para paginas
+components  para componentização tipo botoes reutilizaveis
+config      configuração do projeto com firebase
+services    para chamar a api
+types       nossos types do typescript
+utils       utilitarios para formatar hora data e parte monetaria
+routes      nossas rotas
+
+https://www.figma.com/design/SY9b13oF2znjaSZwTRh7Na/DevBills-2.0?node-id=0-1&p=f&m=draw
+https://www.figma.com/design/SY9b13oF2znjaSZwTRh7Na/DevBills-2.0?node-id=0-1
+
+//instalar react-router  (antigo modo react-router-dom)
+yarn add react-router
+
+//===============================================================
+//aula 04 tailwind css
+// usando tailwindcss
+yarn add tailwindcss @tailwindcss/vite
+
+//configurar o arquivo vite.config.ts importando o tailwindcss e adicionando o plugin
+
+//importar no arquivo index.css
+//link no index.html
+
+//==========================================================
+// aula6 continuando a tela home
+//instalando lucide react
+yarn add lucide-react
+
+//=============================================================
+aula09  firebase
+
+npm install firebase
+yarn add firebase
+
+//minhas credeciais abaixo:
+
+// Import the functions you need from the SDKs you need
+
+import { initializeApp } from "firebase/app";
+
+// TODO: Add SDKs for Firebase products that you want to use
+
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+
+// Your web app's Firebase configuration
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyAF_Jn2pIrFTizrqefPuEEj6MIDoHVWJWM",
+
+  authDomain: "devbills-5b226.firebaseapp.com",
+
+  projectId: "devbills-5b226",
+
+  storageBucket: "devbills-5b226.firebasestorage.app",
+
+  messagingSenderId: "381696033904",
+
+  appId: "1:381696033904:web:681e1c2add2fd34f28a0b5"
+
+};
+
+
+// Initialize Firebase
+
+const app = initializeApp(firebaseConfig);
+
+
+//===================================================================
+aula 11 redux centralizar informações para outras partes do projeto
+compartilhar estados, compartilhar valores de qualquer parte de minha 
+aplicação. 
+useContext faz a mesma coisa que o redux porem atualmente mais utilizado
+em react
+
+//==================================================
+aula 15 conectando interface a api
+
+yarn add axios // nos auxilia a fazer as chamadas, requisições http
+
+//configuração de cors de quem pode acessar ao servidor isso no backend api (instalar na api )
+yarn add @fastify/cors
+
+//aula 16 firebase no backend api
+
+
+
+
+
+
+
+
+
+
